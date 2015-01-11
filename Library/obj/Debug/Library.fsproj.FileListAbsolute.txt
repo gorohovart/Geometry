@@ -1,0 +1,8 @@
+C:\Users\artem_000\Desktop\my builder\IsRightTriangle\Library\bin\Debug\Library.XML
+C:\Users\artem_000\Desktop\my builder\IsRightTriangle\Library\bin\Debug\Library.dll
+C:\Users\artem_000\Desktop\my builder\IsRightTriangle\Library\bin\Debug\Library.pdb
+C:\Users\artem_000\Desktop\my builder\IsRightTriangle\Library\bin\Debug\FSharp.Core.dll
+C:\Users\artem_000\Desktop\my builder\IsRightTriangle\Library\bin\Debug\FSharp.Core.xml
+C:\Users\artem_000\Desktop\my builder\IsRightTriangle\Library\bin\Debug\ru\FSharp.Core.resources.dll
+C:\Users\artem_000\Desktop\my builder\IsRightTriangle\Library\obj\Debug\Library.dll
+C:\Users\artem_000\Desktop\my builder\IsRightTriangle\Library\obj\Debug\Library.pdb
