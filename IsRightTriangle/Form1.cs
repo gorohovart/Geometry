@@ -58,5 +58,18 @@ namespace IsRightTriangle
                 e.Graphics.DrawLine(new Pen(Color.Red), B, C);
             }
         }
+
+        private void randomize_Click(object sender, EventArgs e)
+        {
+            Random rnd = new Random();
+            this.textBox1.Text = rnd.Next(1, 500).ToString();
+            this.textBox2.Text = rnd.Next(1, 500).ToString();
+            this.textBox3.Text = rnd.Next(1, 500).ToString();
+            this.textBox4.Text = rnd.Next(1, 500).ToString();
+            this.textBox5.Text = rnd.Next(1, 500).ToString();
+            this.textBox6.Text = rnd.Next(1, 500).ToString();
+
+            Check_Click(sender, e);
+        }
     }
 }
