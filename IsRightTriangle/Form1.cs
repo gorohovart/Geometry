@@ -13,9 +13,9 @@ namespace IsRightTriangle
 {
     public partial class Form1 : Form
     {
-        private Geometry.Point A;
-        private Geometry.Point B;
-        private Geometry.Point C;
+        private Point A;
+        private Point B;
+        private Point C;
         public Form1()
         {
             InitializeComponent();
@@ -24,11 +24,11 @@ namespace IsRightTriangle
         private void Check_Click(object sender, EventArgs e)
         {
             var rnd = new System.Random();
-            
 
-            A = new Geometry.Point(Convert.ToSingle(textBox1.Text), Convert.ToSingle(textBox2.Text));
-            B = new Geometry.Point(Convert.ToSingle(textBox3.Text), Convert.ToSingle(textBox4.Text));
-            C = new Geometry.Point(Convert.ToSingle(textBox5.Text), Convert.ToSingle(textBox6.Text));
+
+            A = new Point(Convert.ToInt32(textBox1.Text), Convert.ToInt32(textBox2.Text));
+            B = new Point(Convert.ToInt32(textBox3.Text), Convert.ToInt32(textBox4.Text));
+            C = new Point(Convert.ToInt32(textBox5.Text), Convert.ToInt32(textBox6.Text));
 
             var res = Geometry.Checker(A, B, C);
 
@@ -42,7 +42,21 @@ namespace IsRightTriangle
                 label7.Text = "Triangle is not right.";
                 label7.BackColor = Color.Red;
             }
+            this.Invalidate();
         }
 
+        
+
+        private void Form1_Paint(object sender, PaintEventArgs e)
+        {
+            if ((A != null) && (B != null) && (C != null))
+            {
+                //e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+
+                e.Graphics.DrawLine(new Pen(Color.Red), A, B);
+                e.Graphics.DrawLine(new Pen(Color.Red), A, C);
+                e.Graphics.DrawLine(new Pen(Color.Red), B, C);
+            }
+        }
     }
 }
